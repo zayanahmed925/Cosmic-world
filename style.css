@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -29,28 +32,43 @@
     color:white;
     font-weight: 600;
     border-radius: 10px;
+    cursor: pointer;
     /* transform: scale(0,7); */
 }
 .primary-button:hover{
-    transform: scale(0,7);
+    transform: scale(1.1,1.1);
+    box-shadow: 1px 2px 10px grey;
+}
+.primary-button{
+    transition: transform .2s linear;
 }
 /* Header Style */
+header{
+    background-image: url(images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: overlay;
+}
 nav{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
+    height: 80px; 
 }
 .navigation{
     display: flex;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .navigation li{
     list-style: none;
+    margin-top: 20px;
 }
 .navigation li a{
     text-decoration: none;
     margin: 20px;
-    padding: 15px 10px;
+    padding: 20px 10px;
+    color: white;
+    font-weight: 600;
 }
 /* Banner Style */
 .banner{
@@ -65,6 +83,16 @@ nav{
     align-items: flex-start;
     padding-right: 60px;
 }
+.banner-left h1{
+    font-size: 40px;
+    color: white;
+}
+.banner-left p{
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 20px 0;
+    color: white;
+}
 .banner-right{
     display: flex;
     justify-content: center;
@@ -73,14 +101,7 @@ nav{
 .banner-right img{
    width: 100%;
 }
-.banner-left h1{
-    font-size: 45px;
-}
-.banner-left p{
-    font-size: 18px;
-    line-height: 1.4;
-    margin: 20px 0;
-}
+
 /* Feature Style */
 .feature{
     display: grid;
@@ -151,6 +172,7 @@ nav{
     padding: 10px;
     outline: 0;
     border: 1px solid #FF008E ;
-
 }
+/* Responsive Style */
+
 
